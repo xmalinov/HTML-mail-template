@@ -17,22 +17,49 @@
     }
     img {
       max-width: 100%;
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+    }
+    .image_fix {
+      display: block;
+    }
+    /* Client-specific Styles */
+    div,
+    p,
+    a,
+    li,
+    td {
+      -webkit-text-size-adjust: none;
+    }
+    p {
+      margin: 0px 0px !important;
     }
     body {
       -webkit-font-smoothing: antialiased;
       -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
       width: 100% !important;
       height: 100%;
       line-height: 1.6;
+      background-color: #ffffff;
     }
     /* Let's make sure all tables have defaults */
     table td {
       vertical-align: top;
     }
-    /* BODY & CONTAINER */
-    body {
-      background-color: #ffffff;
+    table td {
+      border-collapse: collapse;
     }
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    /* BODY & CONTAINER */
     .body-wrap {
       background-color: #ffffff;
       width: 100%;
@@ -54,6 +81,12 @@
     a {
       color: #348eda;
       text-decoration: underline;
+    }
+    a img {
+      border: none;
+    }
+    #outlook a {
+      padding: 0;
     }
     .btn-primary {
       text-decoration: none;
@@ -80,14 +113,72 @@
     .clear {
       clear: both;
     }
-    /* RESPONSIVE AND MOBILE FRIENDLY STYLES */
+    /*IPAD STYLES*/
     @media only screen and (max-width: 640px) {
-      .container {
-        width: 100% !important;
+      a[href^="tel"],
+      a[href^="sms"] {
+        text-decoration: none;
+        color: #33b9ff;
+        /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
       }
-      .content,
-      .content-wrapper {
-        padding: 10px !important;
+      .mobile_link a[href^="tel"],
+      .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: #33b9ff !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+      table[class=devicewidth] {
+        width: 440px!important;
+        text-align: center!important;
+      }
+      table[class=devicewidthinner] {
+        width: 420px!important;
+        text-align: center!important;
+      }
+      img[class=banner] {
+        width: 440px!important;
+        height: 220px!important;
+      }
+      img[class=col2img] {
+        width: 440px!important;
+        height: 220px!important;
+      }
+    }
+    /*IPHONE STYLES*/
+    @media only screen and (max-width: 480px) {
+      a[href^="tel"],
+      a[href^="sms"] {
+        text-decoration: none;
+        color: #33b9ff;
+        /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+      }
+      .mobile_link a[href^="tel"],
+      .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: #33b9ff !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+      table[class=devicewidth] {
+        width: 280px!important;
+        text-align: center!important;
+      }
+      table[class=devicewidthinner] {
+        width: 260px!important;
+        text-align: center!important;
+      }
+      img[class=banner] {
+        width: 280px!important;
+        height: 140px!important;
+      }
+      img[class=col2img] {
+        width: 280px!important;
+        height: 140px!important;
       }
     }
   </style>
