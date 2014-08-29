@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <title>Email template</title>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    /* Delete or put inline some styles */
+    /* A very basic CSS reset */
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    img {
+      max-width: 100%;
+    }
+    body {
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: none;
+      width: 100% !important;
+      height: 100%;
+      line-height: 1.6;
+    }
+    /* Let's make sure all tables have defaults */
+    table td {
+      vertical-align: top;
+    }
+    /* BODY & CONTAINER */
+    body {
+      background-color: #ffffff;
+    }
+    .body-wrap {
+      background-color: #ffffff;
+      width: 100%;
+    }
+    .container {
+      display: block !important;
+      max-width: 600px !important;
+      margin: 0 auto !important;
+      /* makes it centered */
+      clear: both !important;
+    }
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+      padding: 20px;
+    }
+    /* LINKS & BUTTONS */
+    a {
+      color: #348eda;
+      text-decoration: underline;
+    }
+    .btn-primary {
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+    }
+    /* OTHER STYLES THAT MIGHT BE USEFUL */
+    .last {
+      margin-bottom: 0;
+    }
+    .first {
+      margin-top: 0;
+    }
+    .aligncenter {
+      text-align: center;
+    }
+    .alignright {
+      text-align: right;
+    }
+    .alignleft {
+      text-align: left;
+    }
+    .clear {
+      clear: both;
+    }
+    /* RESPONSIVE AND MOBILE FRIENDLY STYLES */
+    @media only screen and (max-width: 640px) {
+      .container {
+        width: 100% !important;
+      }
+      .content,
+      .content-wrapper {
+        padding: 10px !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:#ffffff;">
+  <table class="body-wrap">
+    <tr>
+      <td valign="top" align="center">
+        <div class="content" style="background-color:#ffffff;">
+          <table class="main" width="600" cellpadding="0" cellspacing="0" border="0" style="height:auto;">
+            <!--Row with a header image -->
+            <tr>
+              <td valign="top" align="center" bgcolor="#ffffff" width="600" height="300">
+                <img src="img.jpg" width="600" height="300" border="0" style="display:block" alt="Sample image">
+              </td>
+            </tr>
+
+            <!--Text block -->
+            <tr>
+              <td valign="top" align="left" width="600" height="90" style="padding-left: 64px;padding-right: 65px; padding-top: 30px;">
+                <font face="Arial, Helvetica, sans-serif;" style="font-size: 14px; font-family:Arial, Helvetica, sans-serif; color:#000000; line-height: 14px">
+            <strong>Hi, First_Name!</strong>
+            <br>
+            <br>
+            </font>
+                <font face="Arial, Helvetica, sans-serif;" style="font-size: 13px; font-family:Arial, Helvetica, sans-serif; color:#000000; line-height: 15px">
+            How are you?
+            </font>
+              </td>
+            </tr>
+
+            <!--Background image pattern for MS Outlook -->
+            <tr>
+              <td bgcolor="#ffffff" valign="top" align="center" width="520" height="90" style="background:url(sampleimage.jpg) no-repeat center bottom;">
+                <!--[if gte mso 9]>
+              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+              <v:fill type="tile" src="sampleimage.jpg" color="#ffffff" />
+              <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+                <div>
+                  <table width="520" cellpadding="0" cellspacing="0" border="0" style="height:auto;">
+                    <tr>
+                      <td width="150" valign="middle" align="center" height="30">
+                      </td>
+                      <td width="215" valign="middle" align="center" height="30">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if gte mso 9]>
+              </v:textbox>
+              </v:rect>
+            <![endif]-->
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="footer">
+          <table width="100%">
+            <tr>
+              <td class="aligncenter content-block">Email <a href="mailto:">some@email.com</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+
+  </table>
+</body>
+
+</html>
